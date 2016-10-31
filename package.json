@@ -1,6 +1,6 @@
 {
   "name": "@mean-expert/model-register",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "FireLoop Model Register Module",
   "main": "index.js",
   "scripts": {

@@ -15,7 +15,8 @@ export class ModelRegister {
         case 'operation':
           reference.observe(Model.hooks[hook].name, Model[hook]);
         break;
-        case 'remote':
+        case 'beforeRemote':
+        case 'afterRemote':
           reference[Model.hooks[hook].type](Model.hooks[hook].name, Model[hook]);
         break;
         default:

@@ -1,0 +1,22 @@
+{
+  "name": "@mean-expert/model-register",
+  "version": "1.0.0",
+  "description": "FireLoop Model Register Module",
+  "main": "index.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mean-expert-official/model-register.git"
+  },
+  "keywords": [
+    "FireLoop"
+  ],
+  "author": "Jonathan Casarrubias",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mean-expert-official/model-register/issues"
+  },
+  "homepage": "https://github.com/mean-expert-official/model-register#readme"
+}

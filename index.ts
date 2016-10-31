@@ -6,7 +6,7 @@
  * This class will register a model reference, hooks and remote methods.
  */
 export class ModelRegister {
-  constructor(Model: any, reference) {
+  constructor(Model: any, reference: any) {
     // Register reference
     Model.model = reference;
     // Register Hooks

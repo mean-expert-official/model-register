@@ -8,7 +8,7 @@ var ModelRegister = (function () {
                     reference.observe(Model.hooks[hook].name, Model[hook]);
                     break;
                 case 'remote':
-                    reference[Model.hooks[hook].name](Model[hook]);
+                    reference[Model.hooks[hook].type](Model.hooks[hook].name, Model[hook]);
                     break;
                 default:
                     throw new Error('FireLoop: Unexpected hook type');

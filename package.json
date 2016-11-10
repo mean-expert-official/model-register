@@ -1,11 +1,16 @@
 {
   "name": "@mean-expert/model-register",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "FireLoop Model Register Module",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "files": [
+    "index.js",
+    "index.js.map",
+    "package.json"
+  ],
   "repository": {
     "type": "git",
     "url": "git+https://github.com/mean-expert-official/model-register.git"

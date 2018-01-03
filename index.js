@@ -6,13 +6,13 @@ var ModelRegister = (function () {
             switch (Model.hooks[hook].type) {
                 case 'operation':
                     reference.observe(Model.hooks[hook].name, function () {
-                        Model[hook].apply(Model, arguments);
+                        return Model[hook].apply(Model, arguments);
                     });
                     break;
                 case 'beforeRemote':
                 case 'afterRemote':
                     reference[Model.hooks[hook].type](Model.hooks[hook].name, function () {
-                        Model[hook].apply(Model, arguments);
+                        return Model[hook].apply(Model, arguments);
                     });
                     break;
                 default:
@@ -20,7 +20,7 @@ var ModelRegister = (function () {
             }
         });
         Object.keys(Model.remotes).forEach(function (remote) {
-            reference[remote] = function () { Model[remote].apply(Model, arguments); };
+            reference[remote] = function () { return Model[remote].apply(Model, arguments); };
             reference.remoteMethod(remote, Model.remotes[remote]);
         });
     }
